@@ -88,7 +88,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Kuliah"
-            android:id="@+id/radioButtonKuliah"/>
+            android:id="@+id/radioButtonKuliah"
+            android:checked="true"/>
     </RadioGroup>
 
     <TextView
@@ -101,7 +102,32 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:entries="@array/korwil"
-        android:id="@+id/spinnerKorwil"/>
+        android:id="@+id/spinnerKorwil"
+        android:focusableInTouchMode="false"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saya mematuhi seluruh aturan tertulis SCI."
+        android:id="@+id/checkBox1"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saya sudah mengirimkan data untuk formulir pendaftaran anggota SCI."
+        android:id="@+id/checkBox2"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saya akan secara aktif menyebarkan virus perdamaian dan mencegah timbulnya bibit-bibit perpecahan sebagai anggota SCI."
+        android:id="@+id/checkBox3"
+        android:checked="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -115,8 +141,19 @@
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Hasil"
-        android:id="@+id/textViewHasil"/>
+        tools:text="Hasil pertama"
+        android:id="@+id/textViewHasil1"
+        />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Hasil kedua"
+        android:id="@+id/textViewHasil2"
+        />
 
 </LinearLayout>
 </ScrollView>
