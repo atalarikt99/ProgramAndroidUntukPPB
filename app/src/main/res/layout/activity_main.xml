@@ -31,29 +31,77 @@
         android:layout_marginTop="28dp"
         android:src="@drawable/logo_sci"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nama"
-        android:id="@+id/textView2"/>
-
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <EditText
+        android:hint="Nama Lengkap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editTextNama"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="No. Register"
-        android:id="@+id/textView3"/>
+</android.support.design.widget.TextInputLayout>
 
     <EditText
+        android:hint="No. Registrasi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="phone"
         android:id="@+id/editTextNoReg"
         />
+
+    <android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pendidikan Terakhir"
+        android:id="@+id/textView2"
+        android:inputType="text"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/radioGroupPendidikan">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SD/MI"
+            android:id="@+id/radioButtonDasar"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMP/MTs"
+            android:id="@+id/radioButtonMPertama"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMA/MA/SMK"
+            android:id="@+id/radioButtonMAtas"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kuliah"
+            android:id="@+id/radioButtonKuliah"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Korwil"
+        android:id="@+id/textViewKorwil"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/korwil"
+        android:id="@+id/spinnerKorwil"/>
 
     <Button
         android:layout_width="wrap_content"
