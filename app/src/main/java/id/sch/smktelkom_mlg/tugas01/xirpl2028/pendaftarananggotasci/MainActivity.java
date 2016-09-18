@@ -1,5 +1,6 @@
 package id.sch.smktelkom_mlg.tugas01.xirpl2028.pendaftarananggotasci;
 
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity
     CheckBox cb3;
     Button bDaftar;
     TextView tvHasil1;
+    TextView tvHasil2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,10 +43,33 @@ public class MainActivity extends AppCompatActivity
             {
                 String nama = etNama.getText().toString();
                 String noreg = etNoReg.getText().toString();
-                tvHasil1.setText(nama + "dengan no. reg. " +noreg);
+                tvHasil1.setText("Identitas: " + nama + " dengan no. reg. " +noreg);
+                doClick();
+
             }
         });
         tvHasil1 = (TextView) findViewById(R.id.textViewHasil1);
+        tvHasil2 = (TextView) findViewById(R.id.textViewHasil2);
+    }
+
+    private void doClick()
+    {
+        String hasil = null;
+
+        if(rgPendidikan.getCheckedRadioButtonId()!=-1)
+        {
+            RadioButton rb = (RadioButton)
+                    findViewById(rgPendidikan.getCheckedRadioButtonId());
+            hasil = rb.getText().toString();
+        }
+        if (hasil == null)
+        {
+            tvHasil2.setText("Belum memilih pendidikan terakhir");
+        }
+        else
+        {
+            tvHasil2.setText("Pendidikan terakhir: " + hasil);
+        }
     }
 
 }
