@@ -120,8 +120,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Saya akan secara aktif menyebarkan virus perdamaian dan mencegah timbulnya bibit-bibit perpecahan sebagai anggota SCI."
-        android:id="@+id/checkBox3"
-        android:checked="false"/>
+        android:id="@+id/checkBox3"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -145,17 +144,34 @@
         />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textViewHasil2"
+        tools:text="Hasil kedua"
         android:layout_gravity="center_horizontal"
-        android:text="Hasil"/>
+        />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView4"
+        android:id="@+id/textViewHasil3"
+        tools:text="Hasil ketiga"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewHasil4"
+        tools:text="Hasil keempat"
         android:layout_gravity="center_horizontal"/>
 
 </LinearLayout>
